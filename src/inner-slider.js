@@ -728,14 +728,16 @@ export class InnerSlider extends React.Component {
       className: "slick-list",
       style: listStyle,
       onClick: this.clickHandler,
-      onMouseDown: touchMove ? this.swipeStart : null,
-      onMouseMove: this.state.dragging && touchMove ? this.swipeMove : null,
-      onMouseUp: touchMove ? this.swipeEnd : null,
-      onMouseLeave: this.state.dragging && touchMove ? this.swipeEnd : null,
-      onTouchStart: touchMove ? this.swipeStart : null,
-      onTouchMove: this.state.dragging && touchMove ? this.swipeMove : null,
-      onTouchEnd: touchMove ? this.touchEnd : null,
-      onTouchCancel: this.state.dragging && touchMove ? this.swipeEnd : null,
+      // CHECK CHECK
+      // onMouseDown: touchMove ? this.swipeStart : null,
+      // onMouseMove: this.state.dragging && touchMove ? this.swipeMove : null,
+      // onMouseUp: touchMove ? this.swipeEnd : null,
+      // onMouseLeave: this.state.dragging && touchMove ? this.swipeEnd : null,
+      // onTouchStart: touchMove ? this.swipeStart : null,
+      // onTouchMove: this.state.dragging && touchMove ? this.swipeMove : null,
+      // onTouchEnd: touchMove ? this.touchEnd : null,
+      // onTouchCancel: this.state.dragging && touchMove ? this.swipeEnd : null,
+      // CHECK CHECK
       onKeyDown: this.props.accessibility ? this.keyHandler : null
     };
 
